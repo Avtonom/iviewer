@@ -1,14 +1,14 @@
 {
   "name": "iviewer",
-  "version": "0.7.11",
+  "version": "0.7.13",
   "description": "jQuery.iviewer is an jQuery UI widget responsible for image view control with zoom control and a possibility to move image in area by the mouse.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/can3p/iviewer.git"
+    "url": "git://github.com/Avtonom/iviewer.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/can3p/iviewer/issues"
+    "url": "https://github.com/Avtonom/iviewer/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

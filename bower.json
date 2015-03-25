@@ -1,10 +1,7 @@
 {
   "name": "iviewer",
-  "version": "0.7.11",
-  "homepage": "https://github.com/can3p/iviewer",
-  "authors": [
-    "Dmitry Petrov <dpetroff@gmail.com>"
-  ],
+  "version": "0.7.13",
+  "homepage": "https://github.com/Avtonom/iviewer",
   "description": "Image viewer widget for jQuery UI",
   "main": "jquery.iviewer.js",
   "keywords": [

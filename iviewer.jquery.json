@@ -8,12 +8,7 @@
     "zoom",
     "rotation"
   ],
-  "version": "0.7.11",
-  "author": {
-    "name": "Dmitry Petrov",
-    "email": "dpetroff@gmail.com",
-    "url": "http://dpetroff.ru"
-  },
+  "version": "0.7.13",
   "maintainers": [
     {
       "name": "Dmitry Petrov",
@@ -27,10 +22,10 @@
           "url": "http://opensource.org/licenses/MIT"
       }
   ],
-  "bugs": "https://github.com/can3p/iviewer/issues",
-  "homepage": "https://github.com/can3p/iviewer",
-  "docs": "https://github.com/can3p/iviewer/wiki",
-  "download": "https://github.com/can3p/iviewer/tags",
+  "bugs": "https://github.com/Avtonom/iviewer/issues",
+  "homepage": "https://github.com/Avtonom/iviewer",
+  "docs": "https://github.com/Avtonom/iviewer/wiki",
+  "download": "https://github.com/Avtonom/iviewer/tags",
   "dependencies": {
       "jquery": ">=1.5",
       "jquery ui": "~1.8"
