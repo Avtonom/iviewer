@@ -23,7 +23,6 @@
 .iviewer_button {
     width: 28px;
     cursor: pointer;
-    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -64,4 +63,16 @@
 .iviewer_rotate_right {
     left: 262px;
     background: #fff url(img/iviewer.rotate_right.png) center center no-repeat;
+}
+
+.iviewer_fasten {
+    left: 297px;
+}
+.iviewer_expand {
+    left: 332px;
+}
+
+.iviewer_button.fa {
+    line-height: 27px;
+    background-color: #fff;
 }

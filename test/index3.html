@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>jquery.iviewer test</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script type="text/javascript" src="jquery.js" ></script>
         <script type="text/javascript" src="jqueryui.js" ></script>
         <script type="text/javascript" src="jquery.mousewheel.min.js" ></script>
@@ -78,10 +79,10 @@
                         
                         if (object) {
                             $('#status').html('You are in ('+coords.x.toFixed(1)+', '+coords.y.toFixed(1)+'). This is '+object.title);
-                            this.container.css('cursor', 'crosshair');
+//                            this.container.css('cursor', 'crosshair');
                         } else {
                             $('#status').html('You are in ('+coords.x.toFixed(1)+', '+coords.y.toFixed(1)+'). This is empty space');
-                            this.container.css('cursor', null);
+//                            this.container.css('cursor', null);
                         }                            
                     },
                     
@@ -106,33 +107,39 @@
             });
         </script>
         <link rel="stylesheet" href="../jquery.iviewer.css" />
+        <!--<link rel="stylesheet" href="http://web-platform.cmb.local/bower_components/iviewer/jquery.iviewer.css" />-->
         <style>
             html, body {
-                height: 100%;
                 padding: 0;
                 margin: 0;
+                height: 1500px;
             }
-        
+
             .viewer
             {
                 height: 100%;
                 position: relative;
                 background-color: lightgreen;
             }
-            
+
             .wrapper
             {
                 border: 1px solid black;
 
-                position: absolute;
+                position: relative;
+                top: 5em;
+                left: 1em;
+               /* position: absolute;
                 top: 5em;
                 left: 1em;
                 bottom: 1em;
-                right: 1em;
+                right: 1em;*/
+                width: 90%;
+                height: 500px;
 
                 overflow: hidden; /*for opera*/
             }
-            
+
             .toolbar
             {
                 border: 1px solid black;
@@ -143,7 +150,7 @@
                 right: 1em;
                 height: 3em;
             }
-            
+
             #pointer
             {
                 background-image: url('arrow.png');
@@ -152,7 +159,7 @@
                 position: absolute;
                 display: none;
             }
-            
+
         </style>
     </head>
     <body>

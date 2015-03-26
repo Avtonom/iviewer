@@ -3,6 +3,8 @@ control and a possibility to move image in area by the mouse.
 
 Widget depends on the jquery.ui.core, jquery.ui.widget and jquery.ui.mouse.
 
+Use: font-awesome
+
 Features:
  * Total control over the widget through API.
  * Controls can be customized with CSS.

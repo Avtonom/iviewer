@@ -7,7 +7,7 @@
  *  - http://www.opensource.org/licenses/mit-license.php
  *
  * Author: Dmitry Petrov
- * Version: 0.7.11
+ * Version: 0.7.13
  */
 
 ( function( $, undefined ) {
@@ -474,6 +474,38 @@ $.widget( "ui.iviewer", $.ui.mouse, {
         }
 
       this.set_zoom(new_zoom, skip_animation);
+    },
+
+    /**
+    * fasten (fix) image in the page
+    *
+    **/
+    fasten: function()
+    {
+        var me = this;
+        console.log(this.container);
+        console.log(me.img_object);
+        if ($(this).hasClass('fa-rotate-90')) {
+            $(this).removeClass('fa-rotate-90').parent()
+                .parent()
+                .css("position", "initial")
+            ;
+        } else {
+            this.container
+                .css("position", "fixed")
+                .width(this.container.width())
+                .height(this.container.height())
+            ;
+        }
+    },
+
+    /**
+    * expand container image
+    *
+    **/
+    expandContainer: function()
+    {
+
     },
 
     /**
@@ -959,6 +991,14 @@ $.widget( "ui.iviewer", $.ui.mouse, {
 
         $("<div>", { 'class': "iviewer_rotate_right iviewer_common iviewer_button" })
                     .bind('mousedown touchstart',function(){me.angle(90); return false;})
+                    .appendTo(this.container);
+
+        $("<div>", { 'class': "iviewer_fasten iviewer_common iviewer_button fa fa-thumb-tack fa-lg fa-fw" })
+                    .bind('mousedown touchstart',function(){me.fasten(); return false;})
+                    .appendTo(this.container);
+
+        $("<div>", { 'class': "fa fa-expand fa-lg fa-fw iviewer_expand iviewer_common iviewer_button " })
+                    .bind('mousedown touchstart',function(){me.expandContainer(); return false;})
                     .appendTo(this.container);
 
         this.update_status(); //initial status update
